@@ -36,6 +36,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -119,7 +120,18 @@ def turtle4():
 def turtle5():
     cooper = rg.SimpleTurtle()
     cooper.speed = 4
-    cooper.pen = rg.pen('red',7)
+    cooper.pen = rg.Pen('red',7)
+
+    cooper.left(90)
+    cooper.forward(90)
+
+
+    diane = rg.SimpleTurtle()
+    diane.speed = 5
+    diane.pen = rg.Pen('purple',9)
+    diane.left(90)
+    diane.forward(300)
+    diane.backward(50)
 
 
 
@@ -204,7 +216,7 @@ def turtle5():
 
 ###############################################################################
 #
-# TODO: 6.
+# Done
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
