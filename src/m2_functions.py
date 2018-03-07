@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Joe Krisciunas.
+"""  # Done
 
 ###############################################################################
 #
-# TODO: 2.
+# Done
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -32,6 +32,7 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -104,30 +105,49 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+
+        steve = rg.SimpleTurtle()
+        steve.speed = 15
+        steve.pen = rg.Pen('orange',3)
+
+        steve.forward(200)
+        steve.right(90)
+        steve.forward(50)
+
+
+def turtle5():
+    cooper = rg.SimpleTurtle()
+    cooper.speed = 4
+    cooper.pen = rg.pen('red',7)
+
+
+
 ###############################################################################
 #
-# TODO: 3.
+# Done
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
 #     -- For each function definition:
-#          -- Where does that function definition begin?
-#             Where does it end?
+#          -- Where does that function definition begin?(at each def)
+#             Where does it end?(at each end_fill method line or for turtle 2 the go back method)
 #     -- How many times does   main   call the   turtle1   function?
 #            (Answer: 1)
 #     -- How many times does   main   call the   turtle2   function?
-#            (Hint: the answer is NOT 1.)
+#            (Hint: the answer is NOT 1.)(2)
 #     -- What line of code calls the   main   function?
-#            (Answer: look at the LAST line of this module, far below.)
+#            (Answer: look at the LAST line of this module, far below.)(just main())
 #
 #     ** ASK QUESTIONS if you are uncertain about any of the answers. **
 #
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
-#       -- WHEN does the code in   main   run?
-#       -- WHEN does the code in   turtle1   run?
-#                    the code in   turtle2   run?
-#                    the code in   turtle3   run?
-#       -- For each of the above, WHY does that code run when it does?
+#       -- WHEN does the code in   main   run? at the end of all this
+#       -- WHEN does the code in   turtle1   run? before turle 2
+#                    the code in   turtle2   run? after turtle 3
+#                    the code in   turtle3   run? after turtle 1
+#       -- For each of the above, WHY does that code run when it does? because that is the order in which each turtle
+# code is defined
 #
 #     ** ASK QUESTIONS if you are uncertain about any of the answers. **
 #
@@ -138,7 +158,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# Done
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -168,7 +188,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 5.
+# Done
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
