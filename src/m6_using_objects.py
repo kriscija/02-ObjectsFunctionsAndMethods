@@ -14,6 +14,7 @@ import rosegraphics as rg
 def main():
     two_circles()
     circle_and_rectangle()
+    lines()
     """ Calls the other functions to demonstrate and/or test them. 
     """
     # Test your functions by putting calls to them here:
@@ -130,11 +131,14 @@ def lines():
     line1.thickness = 10
     line1.get_midpoint()
     print(line1.get_midpoint())
-    print(line1.get_midpoint())
-    print(line1.get_midpoint())
+    midpoint1 = line1.get_midpoint()
+    print(midpoint1.x)
+    print(midpoint1.y)
+
     print(line2.get_midpoint())
-    print(line2.get_midpoint())
-    print(line2.get_midpoint())
+    midpoint2 = line2.get_midpoint()
+    print(midpoint2.x)
+    print(midpoint2.y)
     window.render()
     window.close_on_mouse_click()
     """
