@@ -12,7 +12,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #   by looking for red underlines.
 #
 #   For each error, try to make sense of its message.
-#     -- Hover and/or expand as needed -- make sure you see the message!
+#     -- Hover and/or expand aswewf needed -- make sure you see the message!
 #
 #   Then fix the errors, one by one.  IMPORTANT:
 #     -- Fixing one error may bring up additional errors
